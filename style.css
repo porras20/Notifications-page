@@ -1,0 +1,93 @@
+:root{
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+
+
+--White: hsl(0, 0%, 100%);
+--Very-light: hsl(210, 60%, 98%);
+--Light-grayish-1: hsl(211, 68%, 94%);
+--Light-grayish-2: hsl(205, 33%, 90%);
+--Grayish-blue: hsl(219, 14%, 63%);
+--Dark-grayish: hsl(219, 12%, 42%);
+--Very-dark: #1c202b;
+}
+
+body,html, main{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 62.5%;
+    height: 100%;
+}
+
+main{
+    background-color: var(White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    padding: 1rem;
+    width: 40rem;
+    display: grid;
+    grid-template-columns: 1 40rem;
+    grid-template-rows: repeat(8 10rem);
+}
+
+
+/* notifications */
+.notifications{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.notifications-title{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.notifications-title span{
+    padding: 0.3rem 1rem;
+    color: var(--White);
+    background-color: var(--Blue);
+    border-radius: 5px;
+}
+
+.notifications-mark{
+    color: var(--Dark-grayish);
+    font-size: 1.4rem;
+}
+
+
+/* notification */
+
+.notification{
+    padding: 0 0.5rem;
+    cursor: pointer;
+    color: var(--Dark-grayish);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: 0.2s
+}
+
+.notification:hover{
+    border-radius: 5px;
+    background-color: rgb(206, 204, 204);
+}
+
+.notification img{
+    margin:1rem 1rem 1rem 0;  
+    width: 5rem;
+}
+
+.name{
+    color: var(--Very-dark);
+    font-weight: 800;
+}
+
+.active{
+    margin-left: 1rem;
+    padding: 0.5rem;
+    background-color: var(--Red);
+    border-radius: 50%;
+}
